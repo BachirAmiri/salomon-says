@@ -19,7 +19,7 @@ const nextConfig = {
   output: "export",
   // basePath: "/salomon-says", // Replace with your GitHub repository name
   basePath: process.env.NODE_ENV === "production" ? "/salomon-says" : "",
-  assetPrefix: ".",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/salomon-says/" : "",
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
