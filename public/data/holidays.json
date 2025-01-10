@@ -1,0 +1,15 @@
+{
+  "holidays": [
+    { "date": "01-01", "name": "Jour de l'An" },
+    { "date": "04-21", "name": "Lundi de Pâques" },
+    { "date": "05-01", "name": "Fête du Travail" },
+    { "date": "05-08", "name": "Fête de la Victoire" },
+    { "date": "05-29", "name": "Ascension" },
+    { "date": "06-09", "name": "Lundi de Pentecôte" },
+    { "date": "07-14", "name": "Fête Nationale" },
+    { "date": "08-15", "name": "Assomption" },
+    { "date": "11-01", "name": "Toussaint" },
+    { "date": "11-11", "name": "Armistice" },
+    { "date": "12-25", "name": "Noël" }
+  ]
+}
