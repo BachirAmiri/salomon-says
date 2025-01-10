@@ -1,0 +1,16 @@
+{
+  "holidays": [
+    { "date": "01-01", "name": "New Year's Day" },
+    { "date": "04-01", "name": "Easter Monday" },
+    { "date": "05-01", "name": "Labor Day" },
+    { "date": "05-08", "name": "Victory in Europe Day" },
+    { "date": "05-09", "name": "Ascension Day" },
+    { "date": "05-20", "name": "Whit Monday" },
+    { "date": "07-14", "name": "Bastille Day" },
+    { "date": "08-15", "name": "Assumption of Mary" },
+    { "date": "11-01", "name": "All Saints' Day" },
+    { "date": "11-11", "name": "Armistice Day" },
+    { "date": "12-25", "name": "Christmas Day" }
+  ]
+}
+
