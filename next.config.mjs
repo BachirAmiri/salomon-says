@@ -17,8 +17,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
-  basePath: "/salomon-says", // Replace with your GitHub repository name
-  assetPrefix: "/salomon-says", // Replace with your GitHub repository name
+  // basePath: "/salomon-says", // Replace with your GitHub repository name
+  basePath: process.env.NODE_ENV === "production" ? "/salomon-says" : "",
+  assetPrefix: ".",
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
