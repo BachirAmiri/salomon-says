@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const SalomonSays: React.FC = () => {
-  let message = "Excellente journée à vous!"
+  let message = "Excellente journée à vous !"
 
   return (
     <div className="text-center">
@@ -27,7 +27,7 @@ const SalomonSays: React.FC = () => {
 
         `}
       </pre>
-      <div className="mt-4 p-4 bg-gray-200 rounded-lg">
+      <div className="mt-4 mb-8 p-4  rounded-lg" style={{ backgroundColor: '#90CCFE' }}>
         <p className="text-gray-800">{message}</p>
       </div>
     </div>

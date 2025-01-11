@@ -21,12 +21,16 @@ const App: React.FC = () => {
   const [saint, setSaint] = useState<string>('');
   const [nextHoliday, setNextHoliday] = useState<Holiday | null>(null);
 
+  const basePath = process.env.NODE_ENV === 'production' ? '/salomon-says' : '';
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const saintsResponse = await fetch('/data/saints.json');
+        const saintsResponse = await fetch(`${basePath}/data/saints.json`);
         const saintsData = await saintsResponse.json();
-        const holidaysResponse = await fetch('/data/holidays.json');
+
+        const holidaysResponse = await fetch(`${basePath}/data/holidays.json`);
         const holidaysData = await holidaysResponse.json();
 
         const today = new Date();
@@ -69,10 +73,12 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <SalomonSays />
-      <SaintOfTheDay saint={saint} />
-      <BankingHoliday holiday={nextHoliday} />
+    <div className="flex items-center justify-center min-h-screen" style={{ backgroundColor: '#19181A' }}>
+      <div className="max-w-md rounded-lg p-4" style={{ backgroundColor: '#ECECEC' }}>
+        <SalomonSays />
+        <SaintOfTheDay saint={saint} />
+        <BankingHoliday holiday={nextHoliday} />
+      </div>
     </div>
   );
 };

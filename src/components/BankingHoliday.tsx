@@ -7,7 +7,7 @@ interface BankingHolidayProps {
 
 const BankingHoliday: React.FC<BankingHolidayProps> = ({ holiday }) => (
   <div className="text-center">
-    <h2 className="text-xl font-semibold mb-2 text-gray-700">Next Banking Holiday</h2>
+    <h2 className="text-xl font-semibold mb-2 text-gray-700">Prochain jour férié</h2>
     {holiday ? (
       <p className="mb-4 text-gray-600">
         {holiday.name} -{' '}
